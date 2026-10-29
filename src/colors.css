@@ -1,0 +1,5 @@
+[data-color="yellow"] { --bg: #fff59d; --bar: #fbe96b; }
+[data-color="pink"]   { --bg: #f8bbd0; --bar: #f48fb1; }
+[data-color="green"]  { --bg: #c5e1a5; --bar: #aed581; }
+[data-color="blue"]   { --bg: #b3e5fc; --bar: #81d4fa; }
+[data-color="purple"] { --bg: #d1c4e9; --bar: #b39ddb; }

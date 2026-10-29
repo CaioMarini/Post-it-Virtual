@@ -1,0 +1,5 @@
+{
+  "identifier": "default",
+  "windows": ["note-*", "trash"],
+  "permissions": ["core:default", "core:window:allow-start-dragging"]
+}

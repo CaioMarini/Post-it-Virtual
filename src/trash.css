@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  background: #f4f4f4;
+  font-family: "Segoe UI", sans-serif;
+  color: #333;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  padding: 12px;
+  background: #f4f4f4;
+}
+header small { color: #777; }
+
+input {
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 6px;
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font: inherit;
+}
+
+main { padding: 0 12px 12px; }
+
+article {
+  margin-bottom: 10px;
+  padding: 10px 12px;
+  background: var(--bg);
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+}
+article p {
+  margin: 0 0 8px;
+  white-space: pre-wrap;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+article div { display: flex; align-items: center; gap: 6px; }
+article small { flex: 1; color: #666; }
+
+button {
+  padding: 3px 10px;
+  border: 0;
+  border-radius: 3px;
+  background: rgba(0, 0, 0, 0.08);
+  font: inherit;
+  font-size: 13px;
+  cursor: pointer;
+}
+button:hover { background: rgba(0, 0, 0, 0.16); }
+button.confirm { background: #e53935; color: #fff; }
+
+.empty { color: #888; text-align: center; margin-top: 40px; }

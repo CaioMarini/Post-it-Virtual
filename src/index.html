@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="colors.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body data-color="yellow">
+    <header data-tauri-drag-region>
+      <button id="new" title="Nova nota">+</button>
+      <button id="color" title="Trocar cor">●</button>
+      <span class="grow" data-tauri-drag-region></span>
+      <button id="layer" title="Mandar para trás">📌</button>
+      <button id="del" title="Mandar para a lixeira">×</button>
+    </header>
+    <div id="text" contenteditable="true" spellcheck="false" data-placeholder="Anote algo…"></div>
+    <script src="main.js"></script>
+  </body>
+</html>

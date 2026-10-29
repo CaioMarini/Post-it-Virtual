@@ -1,0 +1,55 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
+  font-family: "Segoe UI", sans-serif;
+  color: #333;
+  overflow: hidden;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  height: 28px;
+  background: var(--bar);
+  user-select: none;
+}
+
+.grow { flex: 1; height: 100%; }
+
+button {
+  width: 28px;
+  height: 28px;
+  border: 0;
+  background: transparent;
+  font-size: 15px;
+  color: #555;
+  cursor: pointer;
+}
+button:hover { background: rgba(0, 0, 0, 0.08); }
+
+#layer.off { opacity: 0.35; filter: grayscale(1); }
+
+#text {
+  flex: 1;
+  padding: 10px 12px;
+  outline: 0;
+  overflow-y: auto;
+  overflow-wrap: anywhere;
+  font: 15px/1.4 "Segoe UI", sans-serif;
+}
+#text:empty::before {
+  content: attr(data-placeholder);
+  color: rgba(0, 0, 0, 0.4);
+}
+#text img {
+  display: block;
+  max-width: 100%;
+  margin: 4px 0;
+  border-radius: 3px;
+}
